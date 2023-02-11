@@ -6,8 +6,8 @@
 /* Recebe um único argumento (caractere) que será convertido para inteiro.    */
 /* Mesmo que isalpha() receba um inteiro como argumento, o caractere é        */
 /*passado para a função. Internamente, o caractere é convertido em seu valor  */
-/*ASCII para a verificação. Retorna: 1 caso seja uma letra do alfabeto        */
-/* maiúscula e 0 caso não esteja no alfabeto.                                 */                                                                      
+/*ASCII para a verificação. Retorna 1 caso seja uma letra do alfabeto         */
+/* e 0 caso não esteja no alfabeto.                                           */                                                                      
 /*                                                                            */
 /*                                                                            */
 /* ************************************************************************** */
