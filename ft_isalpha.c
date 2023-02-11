@@ -1,14 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                                            */
-/*   ft_isalpha.c                                                             */
-/*                                                                            */
-/* Recebe um único argumento (caractere) que será convertido para inteiro.    */
-/* Mesmo que isalpha() receba um inteiro como argumento, o caractere é        */
-/*passado para a função. Internamente, o caractere é convertido em seu valor  */
-/*ASCII para a verificação. Retorna 1 caso seja uma letra do alfabeto         */
-/* e 0 caso não esteja no alfabeto.                                           */                                                                      
-/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalpha                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>+#+  +:+     +#+         */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/11 17:31:03 by sandraemiko       #+#    #+#             */
+/*                                                    ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
