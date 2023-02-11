@@ -3,7 +3,7 @@
 /*                                                                            */
 /*   ft_isdigit.c                                                             */
 /*                                                                            */
-/* Recebe: um único argumento (caractere) que será convertido para inteiro.   */
+/* Recebe um único argumento (caractere) que será convertido para inteiro.    */
 /* Mesmo que isdigit() receba um inteiro como argumento, o caractere é passado*/
 /* para a função. Internamente, o caractere é convertido em seu valor ASCII   */
 /* para a verificação. Retorna o valor 1 quando o caractere recebido é um     */
