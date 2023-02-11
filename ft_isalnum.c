@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                                            */
-/*   ft_isalnum.c                                                             */
-/*                                                                            */
-/* Recebe um argumento inteiro, cujo valor seja um caractere (ou seja, possa  */
-/* ser representado como um unsigned char) ou o valor EOF. Retorna 1          */
-/* caso o caractere seja alfanumérico ou 0 caso contrário.                    */                                                                      
-/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalnum                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>+#+  +:+     +#+         */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/11 17:31:03 by sandraemiko       #+#    #+#             */
+/*                                                    ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
