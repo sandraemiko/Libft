@@ -1,10 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                                            */
-/*   ft_iascii.c                                                              */
-/*                                                                            */
-/* A função isascii() testa um caractere ASCII (no intervalo de 0 a 127).     */                                                                      
-/* Retorna 1 se for um caractere ASCII; caso contrário, zero.                 */                                                          */
+/*                                                        :::      ::::::::   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>+#+  +:+     +#+         */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/11 17:31:03 by sandraemiko       #+#    #+#             */
+/*                                                    ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
