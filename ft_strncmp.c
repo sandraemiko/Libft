@@ -1,15 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                                            */
-/*   ft_strncmp.c                                                             */
-/*                                                                            */
-/* Compara até n caracteres da string  s1 com os da string s2 .               */ 
-/* Esta função começa comparando o primeiro caractere de cada string. Se eles */
-/* forem iguais entre si, ele continua com os pares seguintes até que os      */
-/* caracteres sejam diferentes, até que um caractere nulo de terminação       */
-/* seja alcançado ou até que n caracteres correspondam em ambas as            */
-/* strings, o que acontecer primeiro.                                         */                                                                      
-/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>+#+  +:+     +#+         */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/11 17:31:03 by sandraemiko       #+#    #+#             */
+/*                                                    ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
