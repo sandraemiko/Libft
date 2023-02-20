@@ -1,29 +1,21 @@
 /* ******************************************************************************* */
 /*                                                                                 */
 /*                                                             :::      ::::::::   */
-/*   ft_strnstr.c                                            :+:      :+:    :+:   */
+/*   ft_strdup.c                                             :+:      :+:    :+:   */
 /*                                                         +:+ +:+         +:+     */
-/*   By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>  +#+  +:+     +#+         */
+/*   By: sandraemiko<sandraemiko@prof.educacao.sp.gov.br> +#+  +:+     +#+         */
 /*                                                     +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/19 16:24:10 by sandraemiko            #+#    #+#             */
+/*   Created: 2023/02/20 13:23:04 by sandraemiko            #+#    #+#             */
 /*                                                         ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strdup(const char *s)
 {
-	size_t		position;
-	size_t	i;
+	char	*dest;
 
-	position = ft_strlen((char *)little);
-	if (position == 0)
-		return ((char *)big);
-	i = 0;
-	while (*(big + i)!= '\0' && (len - i) >= position)
-	{
-		if (ft_strncmp((big + i), little, position) == 0)
-			return ((char *)(big + i));
-		i++;
-	}
-	return (NULL);
+    dest = (char*)malloc((ft_strlen(s) + 1) * sizeof(char));
+	if (dest != NULL)
+		ft_strlcpy(dest, s, ft_strlen(s) + 1);
+	return (dest);
 }
