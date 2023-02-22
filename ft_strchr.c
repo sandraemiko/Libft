@@ -10,16 +10,15 @@
 /*                                                                                 */
 /* ******************************************************************************* */
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *str, int c)
 {
-	int	i;
-	
-	i = 0;
-	while (*(s + i) != '\0')
+	while (*str != '\0')
 	{
-		if (*(s + i) == (unsigned char)c)
-			return ((char *)(s + i));
-		i++;
+		if (*str == (unsigned char)c)
+			return ((char *)str);
+		str++;
 	}
-	return ((char *)(s + i));
+	if (c == '\0')
+		return ((char *)str);
+	return (NULL);
 }
