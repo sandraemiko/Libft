@@ -25,19 +25,13 @@ static int ft_contdig(int n)
 	return (cont);
 }
 
-char *ft_itoa(int n)
+static void	ft_strrev(char *str, int n, int len)
 {
-	unsigned int	len;
-	unsigned int	num;
-	char			*str;
+	int num;
 
-	len = ft_contdig(n);
-	str = malloc((len + 1) * sizeof(char));
-	if (str == NULL)
-		return (NULL);
 	if (n < 0)
 	{
-		num = -n;
+		num = - n;
 		*str = '-';
 	}
 	else
@@ -48,5 +42,17 @@ char *ft_itoa(int n)
 		*(str + len) = num % 10 + '0';
 		num /= 10;
 	}
+}
+
+char *ft_itoa(int n)
+{
+	unsigned int	len;
+	char			*str;
+
+	len = ft_contdig(n);
+	str = malloc((len + 1) * sizeof(char));
+	if (str == NULL)
+		return (NULL);
+	ft_strrev(str, n, len);
 	return (str);
 }
