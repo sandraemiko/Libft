@@ -50,7 +50,7 @@ char *ft_itoa(int n)
 	char			*str;
 
 	len = ft_contdig(n);
-	str = malloc((len + 1) * sizeof(char));
+	str = (char *)malloc((len + 1) * sizeof(char));
 	if (str == NULL)
 		return (NULL);
 	ft_strrev(str, n, len);
