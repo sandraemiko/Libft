@@ -6,11 +6,13 @@
 /*   By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>  +#+  +:+     +#+         */
 /*                                                     +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/12 19:31:03 by sandraemiko            #+#    #+#             */
-/*                                                         ###   ########.fr       */
+/*   Updated: 2023/02/27 21:22:10 by sandraemiko           ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+#include "libft.h"
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	index;
 
