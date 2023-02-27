@@ -6,11 +6,13 @@
 /*   By: sandraemiko<sandraemiko@prof.educacao.sp.gov.br> +#+  +:+     +#+         */
 /*                                                     +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 20:09:04 by sandraemiko            #+#    #+#             */
-/*                                                         ###   ########.fr       */
+/*   Updated: 2023/02/27 21:22:10 by sandraemiko           ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+#include "libft.h" 
+
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char *sub_str;
 	size_t size_str;
