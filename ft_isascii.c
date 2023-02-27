@@ -6,13 +6,13 @@
 /*   By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br> +#+  +:+     +#+         */
 /*                                                    +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 21:08:03 by sandraemiko           #+#    #+#             */
-/*                                                        ###   ########.fr       */
+/*   Updated: 2023/02/27 21:22:10 by sandraemiko          ###   ########.fr       */
 /*                                                                                */
 /* ****************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);
