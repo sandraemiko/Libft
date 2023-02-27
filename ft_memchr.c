@@ -5,10 +5,12 @@
 /*                                                         +:+ +:+         +:+     */
 /*   By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>  +#+  +:+     +#+         */
 /*                                                     +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/12 19:07:03 by sandraemiko            #+#    #+#             */
+/*   Created: 2023/02/27 21:13:03 by sandraemiko            #+#    #+#             */
 /*                                                         ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
+
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
