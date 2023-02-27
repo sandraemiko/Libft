@@ -6,13 +6,13 @@
 /*   By: sandraemiko<sandraemiko@prof.educacao.sp.gov.br> +#+  +:+     +#+         */
 /*                                                     +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/11 20:03:03 by sandraemiko            #+#    #+#             */
-/*                                                         ###   ########.fr       */
+/*   Updated: 2023/02/27 21:22:10 by sandraemiko           ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void    ft_bzero(void *s, size_t n)
 {
     ft_memset(s, 0, n);
 }
