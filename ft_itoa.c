@@ -25,17 +25,24 @@ static int ft_contdig(int n)
 	return (cont);
 }
 
+int ft_abs (int n)
+{
+	int result;
+
+	if (n < 0)
+		result = -n;
+	else
+		result = n;
+	return (result);
+}
+
 static void	ft_strrev(char *str, int n, int len)
 {
 	int num;
 
 	if (n < 0)
-	{
-		num = - n;
 		*str = '-';
-	}
-	else
-		num = n;
+	num = ft_abs (n);
 	*(str + len) = '\0';
 	while ((len--) != 0)
 	{
