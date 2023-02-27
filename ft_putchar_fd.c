@@ -6,9 +6,11 @@
 /*   By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>  +#+  +:+     +#+         */
 /*                                                     +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/26 21:07:03 by sandraemiko            #+#    #+#             */
-/*                                                         ###   ########.fr       */
+/*   updated: 2023/02/27 21:22:10 by sandraemiko           ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
+
+#include "libft.h"
 
 void ft_putchar_fd(char c, int fd)
 {
