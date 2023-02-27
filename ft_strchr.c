@@ -6,11 +6,13 @@
 /*   By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>  +#+  +:+     +#+         */
 /*                                                     +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/12 16:13:03 by sandraemiko            #+#    #+#             */
-/*                                                         ###   ########.fr       */
+/*   updated: 2023/02/27 21:22:10 by sandraemiko           ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
-char	*ft_strchr(const char *str, int c)
+#include "libft.h"
+
+char	*ft_strchr (const char *str, int c)
 {
 	while (*str != '\0')
 	{
