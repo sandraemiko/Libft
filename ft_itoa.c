@@ -5,10 +5,12 @@
 /*                                                         +:+ +:+         +:+     */
 /*   By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>  +#+  +:+     +#+         */
 /*                                                     +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/25 20:13:03 by sandraemiko            #+#    #+#             */
+/*   Created: 2023/02/27 21:13:03 by sandraemiko            #+#    #+#             */
 /*                                                         ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
+
+#include "libft.h"
 
 static int ft_contdig(int n)
 {
