@@ -6,13 +6,13 @@
 /*   By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>  +#+  +:+     +#+         */
 /*                                                     +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 21:11:10 by sandraemiko            #+#    #+#             */
-/*                                                         ###   ########.fr       */
+/*   Updated: 2023/02/27 21:22:10 by sandraemiko           ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
 #include "libft.h"
 
-int		ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);
