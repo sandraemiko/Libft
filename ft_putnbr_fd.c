@@ -1,7 +1,7 @@
 /* ******************************************************************************* */
 /*                                                                                 */
 /*                                                             :::      ::::::::   */
-/*   ft_putendl_fd.c                                         :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                          :+:      :+:    :+:   */
 /*                                                         +:+ +:+         +:+     */
 /*   By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>  +#+  +:+     +#+         */
 /*                                                     +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	int exp;
 	int number;
