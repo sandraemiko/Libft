@@ -23,7 +23,7 @@ void ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd('-',fd);
 	number = ft_abs(n);
 	exp = ft_dig(n);
-	ten = ft_powten(exp);
+	ten = ft_powten(exp - 1);
 	while(ten > 0)
 	{
 		i = (number / ten) + '0';
@@ -62,7 +62,6 @@ int ft_powten(int exp)
 	int result;
 
 	result = 1;
-	exp--;
 	while ((exp--) != 0)
 		result = result * 10; 
 	return (result);
