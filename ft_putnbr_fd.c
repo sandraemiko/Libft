@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+void ft_putnbr_fd(int n, int fd)
 {
 	int exp;
 	int number;
@@ -48,7 +48,7 @@ int ft_dig(int n)
 {
 	int digit;
 
-	digit = 0;
+	digit = 1;
 	while (n/10 != 0)
 	{
 		digit++;
@@ -62,7 +62,8 @@ int ft_powten(int exp)
 	int result;
 
 	result = 1;
+	exp--;
 	while ((exp--) != 0)
-		result = result * 10;
+		result = result * 10; 
 	return (result);
 }
