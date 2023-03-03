@@ -12,27 +12,6 @@
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
-{
-	int exp;
-	int number;
-	int ten;
-	int i;
-
-	if(n < 0)
-		ft_putchar_fd('-',fd);
-	number = ft_abs(n);
-	exp = ft_dig(n);
-	ten = ft_powten(exp - 1);
-	while(ten > 0)
-	{
-		i = (number / ten) + '0';
-		write(fd, &i, 1);
-		number = number % ten;
-		ten /= 10;
-	}
-}
-
 int ft_abs (int n)
 {
 	int result;
@@ -56,6 +35,28 @@ int ft_dig(int n)
 	}
 	return (digit);
 }
+
+void ft_putnbr_fd(int n, int fd)
+{
+	int exp;
+	int number;
+	int ten;
+	int i;
+
+	if(n < 0)
+		ft_putchar_fd('-',fd);
+	number = ft_abs(n);
+	exp = ft_dig(n);
+	ten = ft_powten(exp - 1);
+	while(ten > 0)
+	{
+		i = (number / ten) + '0';
+		write(fd, &i, 1);
+		number = number % ten;
+		ten /= 10;
+	}
+}
+
 
 int ft_powten(int exp)
 {
