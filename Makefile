@@ -1,14 +1,14 @@
-# ************************************************************************************** #
-#                                                                                        #
-#                                                                   :::      ::::::::    #
-#    Makefile                                                     :+:      :+:    :+:    #
-#                                                               +:+ +:+         +:+      #
-#    By: <sandraemiko@prof.educacao.sp.gov.br>                +#+  +:+       +#+         #
-#                                                           +#+#+#+#+#+   +#+            #
-#    Created: 2021/10/17 21:35:31 by sandraemiko                 #+#    #+#              #
-#    Updated: 2022/10/23 18:02:21 by sandraemiko                ###   ########.fr        #
-#                                                                                        #
-# ************************************************************************************** #
+# ************************************************************************************************** #
+#                                                                                                    #
+#                                                                               :::      ::::::::    #
+#    Makefile                                                                 :+:      :+:    :+:    #
+#                                                                           +:+ +:+         +:+      #
+#    By: sandraemiko <sandraemiko@prof.educacao.sp.gov.br>                +#+  +:+       +#+         #
+#                                                                       +#+#+#+#+#+   +#+            #
+#    Created: 2021/10/17 21:35:31 by sandraemiko                             #+#    #+#              #
+#    Updated: 2022/10/23 18:02:21 by sandraemiko                            ###   ########.fr        #
+#                                                                                                    #
+# ************************************************************************************************** #
 
 SRC	= ft_isalpha.c ft_isdigit.c ft_isalnum.c  ft_isascii.c ft_isprint.c \
 	ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
@@ -18,29 +18,40 @@ SRC	= ft_isalpha.c ft_isdigit.c ft_isalnum.c  ft_isascii.c ft_isprint.c \
 	ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c \
 	ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
 			
-
 OBJS	= $(SRC:.c=.o)
-
-CC		= cc
-
-CFLAGS	= -Wall -Wextra -Werror
-
+#--------------------------------------//---------------------------------------
 NAME	= libft.a
 
-.c.o:
-			$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+FLAGS	= -Wall -Wextra -Werror
 
+CC		= clang
+#--------------------------------------//---------------------------------------
+.c.o:
+			$(CC) $(FLAGS) -c $< -o $(<:.c=.o)
+#--------------------------------------//---------------------------------------
 $(NAME):	$(OBJS)
 			ar rcs $(NAME) $(OBJS)
 
 all:		$(NAME)
 
+	@echo " ======================================="
+	@echo "          libft.a  created              "
+	@echo "========================================"
+#--------------------------------------//---------------------------------------
 clean:
 			rm -f $(OBJS)
 
+	@echo " ======================================="
+	@echo "           Deleted .o files             "
+	@echo "========================================"
+
 fclean:		clean
 			rm -f $(NAME)
-
+	
+	@echo " ======================================="
+	@echo "             Deleted libft              "
+	@echo "========================================"
+#--------------------------------------//---------------------------------------
 re:			fclean all
 
 .PHONY:		all clean fclean re
