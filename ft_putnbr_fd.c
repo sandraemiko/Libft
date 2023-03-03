@@ -36,6 +36,16 @@ int ft_dig(int n)
 	return (digit);
 }
 
+int ft_powten(int exp)
+{
+	int result;
+
+	result = 1;
+	while ((exp--) != 0)
+		result = result * 10; 
+	return (result);
+}
+
 void ft_putnbr_fd(int n, int fd)
 {
 	int exp;
@@ -57,13 +67,3 @@ void ft_putnbr_fd(int n, int fd)
 	}
 }
 
-
-int ft_powten(int exp)
-{
-	int result;
-
-	result = 1;
-	while ((exp--) != 0)
-		result = result * 10; 
-	return (result);
-}
