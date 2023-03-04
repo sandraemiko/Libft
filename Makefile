@@ -24,7 +24,7 @@ NAME	= libft.a
 
 FLAGS	= -Wall -Wextra -Werror
 
-CC		= clang
+CC		= cc
 #--------------------------------------//---------------------------------------
 .c.o:
 			$(CC) $(FLAGS) -c $< -o $(<:.c=.o)
