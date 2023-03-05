@@ -16,7 +16,6 @@ static int	ft_listlen(char const *s, char c)
 {
 	int	len;
 
-
 	len = 0;
 	while (*(s) != '\0')
 	{
