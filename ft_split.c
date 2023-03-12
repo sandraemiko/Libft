@@ -50,7 +50,7 @@ char	**ft_split(char const *s, char c)
 			i++;
 		if (i != 0)
 		{
-			list_pointer[j++] = ft_substr(s, 0, i-1);
+			list_pointer[j++] = ft_substr(s, 0, i);
 			s += i;
 		}
 		else
