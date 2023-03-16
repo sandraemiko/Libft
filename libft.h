@@ -6,7 +6,7 @@
 /*   By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>  +#+  +:+     +#+         */
 /*                                                     +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 20:59:10 by sandraemiko            #+#    #+#             */
-/*   Updated: 2023/03/12 21:22:10 by sandraemiko           ###   ########.fr       */
+/*   Updated: 2023/03/16 22:22:10 by sandraemiko           ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
@@ -64,7 +64,7 @@ void ft_lstadd_back(t_list **lst, t_list *new);
 void ft_lstdelone(t_list *lst, void (*del)(void*));
 void ft_lstclear(t_list **lst, void (*del)(void*));
 void ft_lstiter(t_list *lst, void (*f)(void *));
-t_list *ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *)); 
+t_list *ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *));  
 
 
 #endif
