@@ -26,7 +26,7 @@ SRCS_BONUS	= ft_lstnew.c	ft_lstadd_front.c	ft_lstsize.c	ft_lstlast.c \
 	ft_lstmap.c \
 
 			
-OBJS_BONUS	=	${SRCS_BONUS:.c=.o}
+OBJS_BONUS	=	${SRCS_BONUS:.c=.o} 
 #--------------------------------------//---------------------------------------
 NAME	= libft.a 
 
