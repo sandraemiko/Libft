@@ -5,8 +5,8 @@
 /*                                                        +:+ +:+         +:+     */
 /*   By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br> +#+  +:+     +#+         */
 /*                                                    +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/16 15:31:11 by sandraemiko           #+#    #+#             */
-/*   Updated: 2023/02/16 15:31:11 by sandraemiko          ###   ########.fr       */
+/*   Created: 2023/02/16 16:31:11 by sandraemiko           #+#    #+#             */
+/*   Updated: 2023/02/16 16:31:11 by sandraemiko          ###   ########.fr       */
 /*                                                                                */
 /* ****************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	new->next = *lst; 
+	new->next = *lst;  
 	*lst = new;  
 } 
