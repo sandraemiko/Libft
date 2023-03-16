@@ -6,7 +6,7 @@
 /*   By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>  +#+  +:+     +#+         */
 /*                                                     +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 20:59:10 by sandraemiko            #+#    #+#             */
-/*   Updated: 2023/02/27 21:22:10 by sandraemiko           ###   ########.fr       */
+/*   Updated: 2023/03/12 21:22:10 by sandraemiko           ###   ########.fr       */
 /*                                                                                 */
 /* ******************************************************************************* */
 
@@ -15,6 +15,12 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>         
+
+typedef struct  s_list
+{
+    void *content;
+    struct s_list *next;
+}   t_list;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
