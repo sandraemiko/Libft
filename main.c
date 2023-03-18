@@ -3,7 +3,6 @@
 # include "libft.h"
 
 
-
 int main(void)
 {
     char val;
@@ -11,7 +10,11 @@ int main(void)
 
 
    int veri = ft_isdigit(val);
+   printf(" oi");
+   
+   
+
    //printf ("String value Int value = %d\n", veri );
    
-   return 1;
+   return 0;
 }
