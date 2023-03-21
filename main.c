@@ -6,7 +6,7 @@
 int main(void)
 {
     char val;
-    val = '2' ;
+    val = '2';
 
 
    int veri = ft_isdigit(val);
@@ -14,7 +14,7 @@ int main(void)
    
    
 
-   //printf ("String value Int value = %d\n", veri );
+   printf ("String value Int value = %d\n", veri );
    
    return 0;
 }
