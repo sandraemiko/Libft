@@ -1,25 +1,26 @@
-/* ******************************************************************************* */
-/*                                                                                 */
-/*                                                             :::      ::::::::   */
-/*   ft_strrchr.c                                            :+:      :+:    :+:   */
-/*                                                         +:+ +:+         +:+     */
-/*   By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br>  +#+  +:+     +#+         */
-/*                                                     +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/12 19:07:03 by sandraemiko            #+#    #+#             */
-/*   Updated: 2023/02/27 21:22:10 by sandraemiko           ###   ########.fr       */
-/*                                                                                 */
-/* ******************************************************************************* */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sandraemiko <sandraemiko@prof.educacao.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/03/21 03:18:35 by sandraemiko       #+#    #+#             */
+/*   Updated: 2023/03/23 12:48:14 by sandraemiko      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
-    int	i;
+    int	end;
 
-	i = ft_strlen(s);
-	while (i > 0 && *(s + i) != (char)c)
-    	i--;
-	if (i == 0 && (char)c != '0')
-        return (NULL);
-	return ((char*)(s + i));
+	end = ft_strlen(s) + 1;
+	while ((end--) > 0)
+	{
+		if(*(s + end) == (unsigned char)c)
+			return ((char *)(s + end)); 
+	}
+	return (NULL);
 }

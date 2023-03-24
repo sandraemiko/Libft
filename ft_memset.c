@@ -6,7 +6,7 @@
 /*   By: sandraemiko <sandraemiko@prof.educacao.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 03:04:45 by sandraemiko       #+#    #+#             */
-/*   Updated: 2023/03/21 03:05:04 by sandraemiko      ###   ########.fr       */
+/*   Updated: 2023/03/24 12:43:29 by sandraemiko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void    *ft_memset(void *s, int c, size_t n)
 {
     unsigned char *t;
 
-    t = (unsigned char *)s;
+    t = (unsigned char*)s;
     while((n--) > 0)
-         *(t ++) = (unsigned char)c;
+         *(t + n) = (unsigned char)c;
     return (t);
 }

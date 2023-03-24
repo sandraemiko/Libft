@@ -1,16 +1,16 @@
-/* ****************************************************************************** */
-/*                                                                                */
-/*                                                            :::      ::::::::   */
-/*   ft_lstmap                                              :+:      :+:    :+:   */
-/*                                                        +:+ +:+         +:+     */
-/*   By:sandraemiko<sandraemiko@prof.educacao.sp.gov.br> +#+  +:+     +#+         */
-/*                                                    +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/16 17:23:03 by sandraemiko           #+#    #+#             */
-/*   Updated: 2023/02/16 17:23:03 by sandraemiko          ###   ########.fr       */
-/*                                                                                */
-/* ****************************************************************************** */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sandraemiko <sandraemiko@prof.educacao.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/03/21 09:25:09 by sandraemiko       #+#    #+#             */
+/*   Updated: 2023/03/21 12:11:53 by sandraemiko      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include "libft.h"
+# include "libft.h"
 
 t_list *ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *))
 {
@@ -22,14 +22,14 @@ t_list *ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *))
     new_lst = NULL;
     while(lst != NULL)
     {
-        element = ft_lstnew (f(lst -> content));
+        element = ft_lstnew (f(lst->content));
         if (element == NULL)
         {
             ft_lstclear(&new_lst,del);
             return (NULL);
         }
         ft_lstadd_back (&new_lst, element);
-        lst = lst ->next;
+        lst = lst->next;
     }
     element = NULL;
     return(new_lst);

@@ -6,7 +6,7 @@
 /*   By: sandraemiko <sandraemiko@prof.educacao.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 02:54:43 by sandraemiko       #+#    #+#             */
-/*   Updated: 2023/03/21 03:20:26 by sandraemiko      ###   ########.fr       */
+/*   Updated: 2023/03/21 12:22:30 by sandraemiko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ void ft_lstadd_back(t_list **lst, t_list *new)
     else
     {
         ptr = ft_lstlast(*lst);
-        ptr -> next = new;
+        ptr->next = new;
     }
-}   
+} 
