@@ -6,7 +6,7 @@
 /*   By: sandraemiko <sandraemiko@prof.educacao.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 03:18:26 by sandraemiko       #+#    #+#             */
-/*   Updated: 2023/03/21 03:41:39 by sandraemiko      ###   ########.fr       */
+/*   Updated: 2023/03/30 18:04:01 by sandraemiko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,26 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t		position;
-	size_t	i;
+	size_t	index_big;
+	size_t	index_little;
+	size_t	index;
 
-	position = ft_strlen((char *)little);
-	if (position == 0)
-		return ((char *)big);
-	i = 0;
-	while (*(big + i)!= '\0' && (len - i) >= position)
+	index_big = 0;
+	if (*little == '\0')
+		return ((char*)big);
+	while (len > index_big && *(big + index_big) != '\0')
 	{
-		if (ft_strncmp((big + i), little, position) == 0)
-			return ((char *)(big + i));
-		i++;
+		index = index_big;
+		index_little = 0;
+		while (*(char*)(big + index_big) == *(char*)(little + index_little))
+		{
+			if (index_big++ == len && *(char*)(little + index_little) != '\0')
+				return (NULL);
+			else if (*(char*)(little + 1 + index_little++) == '\0')
+				return ((char*)(big + index));
+		}
+		index_big = index;
+		index_big++;
 	}
 	return (NULL);
 }

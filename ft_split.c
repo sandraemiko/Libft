@@ -39,8 +39,10 @@ char	**ft_split(char const *s, char c)
 	int	j;
 	char **list_pointer; 
 
+	if(!s)
+		return (NULL);
 	list_pointer = (char**)malloc(sizeof(char*) * (ft_listlen(s, c) + 1));
-	if ((list_pointer == NULL) || (s == NULL))
+	if (!list_pointer) 
 		return (NULL);
 	j = 0;
 	while (*s != '\0')
