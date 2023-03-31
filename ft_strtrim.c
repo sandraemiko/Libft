@@ -16,7 +16,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	int	len_s1;
 	
-	if (!s1 || !set)
+	if (s1 == NULL || set == NULL)
 		return (NULL);
 	while (ft_strchr(set, *s1) != NULL && *s1 != '\0')
 		s1++;

@@ -48,7 +48,9 @@ $(NAME):	$(OBJS)
 	@echo "                          +#+#+#+#+#+   +#+         "
 	@echo "============================   #+#    #+#           "
 	@echo "                               ###   ########.fr    "
-
+so:
+	$(CC) -nostartfiles -fPIC $(FLAGS) $(SRCS)
+	gcc -nostartfiles -shared -o libft.so $(OBJS)
 									      
 bonus:		$(OBJS_BONUS) 
 			ar -rcs $(NAME) $(OBJS_BONUS)
