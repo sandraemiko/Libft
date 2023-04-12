@@ -19,9 +19,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (s1 == NULL || set == NULL)
 		return (NULL);
 	while (ft_strchr(set, *s1) != NULL && *s1 != '\0')
-		s1++;
 	len_s1 = ft_strlen(s1);
-	while (ft_strchr(set, *(s1 + len_s1)) != NULL && len_s1 != 0)
+	while (ft_strchr(set, s1[len_s1]) != NULL && len_s1 != 0)
 	    len_s1--;
 	return (ft_substr(s1, 0, (len_s1 + 1)));
 }
