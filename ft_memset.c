@@ -6,7 +6,7 @@
 /*   By: sandraemiko <sandraemiko@prof.educacao.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 03:04:45 by sandraemiko       #+#    #+#             */
-/*   Updated: 2023/03/31 01:30:05 by sandraemiko      ###   ########.fr       */
+/*   Updated: 2023/04/12 00:15:51 by sandraemiko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,4 +17,4 @@ void    *ft_memset(void *s, int c, size_t n)
     while((n--) > 0)
          *(char*)(s + n) = c;
     return (s);
-}
+} 

@@ -14,12 +14,12 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned int i;
+	unsigned int i;// cria uma variável do tipo unsigned int
 
-	i = 0;
-	while (*(s + i) != '\0')
+	i = 0;// atribui o valor 0
+	while (*(s + i) != '\0')// enquanto não chegar na terminação de s
 	{
-		(*f)(i, (s + i));
+		(*f)(i, (s + i));// aplica a função em cada caracter, passando o indice como argumento
 		i++;
 	}
 }

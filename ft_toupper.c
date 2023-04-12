@@ -14,7 +14,7 @@
 
 int	ft_toupper(int c)
 {
-	if (c >= 97 && c <= 122)
-		return (c - ' ');
-	return (c);
+	if (c >= 97 && c <= 122) // Verifica o caracter c esta na faixa numerica correspondente as letras minusculas
+		return (c - ' '); // subtrai 32 (espaço) de c , que é a diferença entre as letras minusculas e maiusculas
+	return (c);// retorna o valor convertido ou o proprio valor de ela não for caracter minusculo
 }

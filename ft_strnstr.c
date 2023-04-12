@@ -6,7 +6,7 @@
 /*   By: sandraemiko <sandraemiko@prof.educacao.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 03:18:26 by sandraemiko       #+#    #+#             */
-/*   Updated: 2023/03/30 18:04:01 by sandraemiko      ###   ########.fr       */
+/*   Updated: 2023/04/12 01:51:20 by sandraemiko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 				return ((char*)(big + index));
 		}
 		index_big = index;
-		index_big++;
+		index_big++; 
 	}
 	return (NULL);
 }

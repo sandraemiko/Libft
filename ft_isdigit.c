@@ -6,7 +6,7 @@
 /*   By: sandraemiko <sandraemiko@prof.educacao.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 02:53:52 by sandraemiko       #+#    #+#             */
-/*   Updated: 2023/03/21 03:20:08 by sandraemiko      ###   ########.fr       */
+/*   Updated: 2023/04/11 23:55:48 by sandraemiko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isdigit(int c)
 {
-	if (c >= 48 && c <= 57)
+	if (c >= 48 && c <= 57) 
     	return (1);
     return (0);
 }

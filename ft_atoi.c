@@ -6,7 +6,7 @@
 /*   By: sandraemiko <sandraemiko@prof.educacao.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 02:52:17 by sandraemiko       #+#    #+#             */
-/*   Updated: 2023/03/24 16:37:56 by sandraemiko      ###   ########.fr       */
+/*   Updated: 2023/04/11 23:52:27 by sandraemiko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 int ft_escape (int i)
 {
 	if (i == ' ' || i == '\t' || i == '\n' ||
-		i == '\v' || i == '\f' || i == '\r')
-		return (1);
+		i == '\v' || i == '\f' || i == '\r')     
+		return (1);                               
 	else
 		return (0);
 }
@@ -28,8 +28,8 @@ int	ft_atoi (const char *str)
 
 	sign = 1;
 	value = 0;
-	while (ft_escape(*str))
-		str++;
+	while (ft_escape(*str)) 
+		str++; 
 	if (*str == '-' || *str == '+')
 	{
 		if (*str == '-')

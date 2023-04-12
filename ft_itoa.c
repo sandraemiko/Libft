@@ -6,7 +6,7 @@
 /*   By: sandraemiko <sandraemiko@prof.educacao.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 02:54:34 by sandraemiko       #+#    #+#             */
-/*   Updated: 2023/03/25 09:48:27 by sandraemiko      ###   ########.fr       */
+/*   Updated: 2023/04/11 23:58:21 by sandraemiko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ static int	ft_lendigt(int n)
 {
 	int	len;
 	
-
 	len =1;
 	if (n < 0)
 		len++;

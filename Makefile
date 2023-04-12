@@ -19,7 +19,7 @@ SRCS		=	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 			ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c	
 			
 
-OBJS	= $(SRCS:.c=.o)     
+OBJS	= $(SRCS:.c=.o)    
 #--------------------------------------//---------------------------------------
 SRCS_BONUS	=	ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c \
 			ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c
@@ -28,18 +28,18 @@ OBJS_BONUS	=	$(SRCS_BONUS:.c=.o)
 #--------------------------------------//---------------------------------------
 NAME	= libft.a 
 
-FLAGS	= -Wall -Wextra -Werror              
-
-CC		= cc
+FLAGS	= -Wall -Wextra -Werror             
+							     
+CC		= cc 
 #--------------------------------------//---------------------------------------
 .c.o:
-	$(CC) $(FLAGS) -c $< -o $(<:.c=.o)  
+	$(CC) $(FLAGS) -c $< -o $(<:.c=.o) 
 
 #--------------------------------------//---------------------------------------
-all:		$(NAME)
+all:		$(NAME) 
 
 $(NAME):	$(OBJS) 
-			ar rcs $(NAME) $(OBJS)
+			ar rcs $(NAME) $(OBJS) 
 
 	@echo "                                  :::      :::::::: "
 	@echo "============================    :+:      :+:    :+: "
@@ -48,10 +48,7 @@ $(NAME):	$(OBJS)
 	@echo "                          +#+#+#+#+#+   +#+         "
 	@echo "============================   #+#    #+#           "
 	@echo "                               ###   ########.fr    "
-so:
-	$(CC) -nostartfiles -fPIC $(FLAGS) $(SRCS)
-	gcc -nostartfiles -shared -o libft.so $(OBJS)
-									      
+
 bonus:		$(OBJS_BONUS) 
 			ar -rcs $(NAME) $(OBJS_BONUS)
 
@@ -67,7 +64,7 @@ bonus:		$(OBJS_BONUS)
 
 #--------------------------------------//---------------------------------------
 clean:
-			rm -f $(OBJS) $(OBJS_BONUS) 
+			rm -f $(OBJS) $(OBJS_BONUS) #limpa os arquivos .o
 
 	@echo "                                  :::      :::::::: "
 	@echo "============================    :+:      :+:    :+: "
@@ -79,7 +76,7 @@ clean:
 
 
 fclean:		clean
-			rm -f $(NAME)
+			rm -f $(NAME)# limpa o arquivo .a
 
 	@echo "                                  :::      :::::::: "
 	@echo "============================    :+:      :+:    :+: "
