@@ -1,4 +1,4 @@
-# ##Libft##
+# Libft
 
 ▣ Deliver Files
 
@@ -21,7 +21,7 @@
 
 ▣ Function List
 
-    ◊ Part 1 - Libc Functions
+    ◊ Part 1 - Libc Functions 
 
         atoi, calloc, isalnum, isalpha, isascii, isdigit, isprint, memcmp, memcpy, memccpy, 
         memchr, memcmp, memset, memmove, strchr, strlcat, strlcpy, strlen, strnstr, strrchr,
