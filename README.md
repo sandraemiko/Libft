@@ -1,11 +1,11 @@
 # Libft
 
-_ Deliver Files
+- Deliver Files
 
     .c, libft.h, Makefile
 
 
-▣ Description
+- Description
 
         This individual project aims to create a C library, gathering commonly used functions
         that we will be allowed to use in all our subsequent projects. In the learning journey 
@@ -19,9 +19,9 @@ _ Deliver Files
         Additionally, we are allowed to use the <string.h> library to access size_t and NULL.
 
 
-▣ Function List
+- Function List
 
-    ◊ Part 1 - Libc Functions 
+    - Part 1 - Libc Functions 
 
         atoi, calloc, isalnum, isalpha, isascii, isdigit, isprint, memcmp, memcpy, memccpy, 
         memchr, memcmp, memset, memmove, strchr, strlcat, strlcpy, strlen, strnstr, strrchr,
@@ -30,13 +30,13 @@ _ Deliver Files
         toupper.
 
 
-    ◊ Part 2 - Additional Functions  
+    - Part 2 - Additional Functions  
 
         itoa, putchar_fd, putendl_fd, putnbr_fd, putstr_fd, split, strmapi, strjoin, strlen, 
         strnstr, strtrim, substr.
 
 
-    ◊ Bonus Part
+    - Bonus Part
 
         lstadd_back, lstadd_front, lstclear, lstdelone, lstiter, lstlast, lstmap, lstnew, lstsize. 
 
