@@ -6,7 +6,7 @@
 /*   By: sandraemiko <sandraemiko@prof.educacao.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 02:52:56 by sandraemiko       #+#    #+#             */
-/*   Updated: 2023/04/26 10:20:09 by sandraemiko      ###   ########.fr       */
+/*   Updated: 2023/04/26 15:10:39 by sandraemiko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-
 	char *pointer;
 
 	pointer = malloc (nmemb * size); 
@@ -23,6 +22,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero (pointer, (nmemb * size));
 	return (pointer); 
 }
-
-
-
