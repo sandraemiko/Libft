@@ -32,7 +32,8 @@
 
     ◊ Part 2 - Additional Functions 
 
-        itoa, putchar_fd, putendl_fd, putnbr_fd, putstr_fd, split, strmapi, strjoin, strlen, strnstr, strtrim, substr.
+        itoa, putchar_fd, putendl_fd, putnbr_fd, putstr_fd, split, strmapi, strjoin, strlen, 
+        strnstr, strtrim, substr.
 
 
     ◊ Bonus Part
