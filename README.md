@@ -22,7 +22,7 @@
 - Function List
 
     - Part 1 - Libc Functions 
-    
+
             atoi, calloc, isalnum, isalpha, isascii, isdigit, isprint, memcmp, memcpy, memccpy, 
             memchr, memcmp, memset, memmove, strchr, strlcat, strlcpy, strlen, strnstr, strrchr,
             strdup, strncmp, strcasecmp, strncasecmp, strcat, strchr, strcmp, strcpy, strcspn,
@@ -32,13 +32,13 @@
 
     - Part 2 - Additional Functions  
 
-        itoa, putchar_fd, putendl_fd, putnbr_fd, putstr_fd, split, strmapi, strjoin, strlen, 
-        strnstr, strtrim, substr.
+            itoa, putchar_fd, putendl_fd, putnbr_fd, putstr_fd, split, strmapi, strjoin, strlen, 
+            strnstr, strtrim, substr.
 
 
     - Bonus Part
 
-        lstadd_back, lstadd_front, lstclear, lstdelone, lstiter, lstlast, lstmap, lstnew, lstsize. 
+            lstadd_back, lstadd_front, lstclear, lstdelone, lstiter, lstlast, lstmap, lstnew, lstsize. 
 
 
 
