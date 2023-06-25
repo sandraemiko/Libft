@@ -1,4 +1,4 @@
- Libft
+#Libft
 
 ▣ Deliver Files
 
@@ -30,7 +30,7 @@
         toupper.
 
 
-    ◊ Part 2 - Additional Functions 
+    ◊ Part 2 - Additional Functions  
 
         itoa, putchar_fd, putendl_fd, putnbr_fd, putstr_fd, split, strmapi, strjoin, strlen, 
         strnstr, strtrim, substr.
