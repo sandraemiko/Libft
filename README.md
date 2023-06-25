@@ -2,7 +2,7 @@
 
 - Deliver Files
 
-    .c, libft.h, Makefile
+        .c, libft.h, Makefile
 
 
 - Description
