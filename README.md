@@ -1,9 +1,11 @@
 📚 Libft
 
 📗 Program Name
+
 libft.a
 
-Deliver Files
+
+📙 Deliver Files
 
 .c, libft.h, Makefile
 
