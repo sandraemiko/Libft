@@ -7,7 +7,7 @@
 
 - Description
 
-        This individual project aims to create a C library, gathering commonly used functions 
+        This project aims to create a C library, gathering commonly used functions 
         that we will be allowed to use in all our subsequent projects. In the learning journey 
         at school 42, we are restricted in using standard C library functions and are only
         permitted to use the functions we code ourselves. Therefore, the long-term goal of 
