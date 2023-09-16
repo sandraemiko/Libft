@@ -6,7 +6,7 @@
 /*   By: sandraemiko <sandraemiko@prof.educacao.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 02:53:27 by sandraemiko       #+#    #+#             */
-/*   Updated: 2023/09/15 21:30:40 by sandraemiko      ###   ########.fr       */
+/*   Updated: 2023/09/15 21:37:42 by sandraemiko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,4 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
+
