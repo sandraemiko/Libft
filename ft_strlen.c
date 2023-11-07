@@ -14,10 +14,10 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t i;//variável que guardará o comprimento da string
+	size_t i;
 
-	i = 0;// inicia por 0, que o elem.netro da adição, caso não tenha nehum caracter , além do terminador da string , caracter nulo
-	while (*(s + i) != '\0')// Enquando não chegar no fim da string 
-		i++;//acresce uma unidade correspondente ao caracter que esta na posição i
+	i = 0;
+	while (*(s + i) != '\0')/
+		i++;
     return (i);
 }
