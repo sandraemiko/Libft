@@ -6,7 +6,7 @@
 /*   By: sandraemiko <sandraemiko@prof.educacao.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 02:54:25 by sandraemiko       #+#    #+#             */
-/*   Updated: 2023/09/26 11:18:38 by sandraemiko      ###   ########.fr       */
+/*   Updated: 2023/11/30 18:18:43 by sandraemiko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 126)
+	if (c >= ' ' && c <= '~')
 		return (1);
 	return (0);
 }
