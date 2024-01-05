@@ -22,7 +22,7 @@ int ft_escape(int i)
 
 int	ft_atoi(const char *str)
 {
-	int sign;
+	int sign; 
 	int value;
 
 	sign = 1;
