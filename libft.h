@@ -6,7 +6,7 @@
 /*   By: sandraemiko <sandraemiko@prof.educacao.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 02:08:49 by sandraemiko       #+#    #+#             */
-/*   Updated: 2023/04/26 11:58:48 by sandraemiko      ###   ########.fr       */
+/*   Updated: 2024/01/20 09:43:57 by sandraemiko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ typedef	struct		s_list
 {
 	void			*content;
 	struct s_list	*next;
-}					t_list;
+}					t_list; 
 
 int					ft_atoi(const char *nptr);
 void				ft_bzero(void *s, size_t n);
